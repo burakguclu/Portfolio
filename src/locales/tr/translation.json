@@ -24,10 +24,24 @@
   },
   "certificates": {
     "title": "Sertifikalarım",
-    "viewPdf": "PDF Görüntüle",
+    "viewPdf": "Sertifikayı Doğrula",
     "loading": "Yükleniyor...",
     "error": "Hata",
-    "loadError": "Sertifikalar yüklenemedi"
+    "loadError": "Sertifikalar yüklenemedi",
+    "certificates": {
+      "btk": {
+        "provider": "BTK Akademi",
+        "bilgi_teknolojileri": "Bilgi Teknolojilerine Giriş",
+        "java": "JAVA ile Programlamaya Giriş",
+        "html5": "HTML5 ile Web Geliştirme",
+        "iot": "Nesnelerin İnterneti (IoT) ve Güvenliği",
+        "css": "CSS Temelleri",
+        "proteus": "Proteus ile Devre Tasarımı",
+        "web_servisleri": "Web Servislerine Giriş",
+        "git_&_github": "Versiyon Kontrolleri: Git ve GitHub",
+        "java_advanced": "İleri Seviye Java"
+      }
+    }
   },
   "about": {
     "title": "Hakkımda",
@@ -74,6 +88,13 @@
       "title": "Yabancı Diller",
       "english": "İngilizce - İleri Seviye",
       "german": "Almanca - Orta Seviye"
+    },
+    "linkedin": {
+      "connect": "LinkedIn ile Bağlan",
+      "loading": "LinkedIn verileri yükleniyor...",
+      "error": "LinkedIn verilerini çekerken bir hata oluştu",
+      "current": "Günümüz",
+      "ongoing": "Devam Ediyor"
     }
   }
 } 

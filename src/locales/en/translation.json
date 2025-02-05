@@ -59,6 +59,13 @@
       "title": "Languages",
       "english": "English - Advanced",
       "german": "German - Intermediate"
+    },
+    "linkedin": {
+      "connect": "Connect with LinkedIn",
+      "loading": "Loading LinkedIn data...",
+      "error": "Error loading LinkedIn data",
+      "current": "Present",
+      "ongoing": "Ongoing"
     }
   },
   "github": {
@@ -71,9 +78,23 @@
   },
   "certificates": {
     "title": "My Certificates",
-    "viewPdf": "View PDF",
+    "viewPdf": "Verify Certificate",
     "loading": "Loading...",
     "error": "Error",
-    "loadError": "Failed to load certificates"
+    "loadError": "Failed to load certificates",
+    "certificates": {
+      "btk": {
+        "provider": "BTK Academy",
+        "bilgi_teknolojileri": "Introduction to Information Technologies",
+        "java": "Introduction to Programming with JAVA",
+        "html5": "Web Development with HTML5",
+        "iot": "Internet of Things (IoT) and Security",
+        "css": "CSS Fundamentals",
+        "proteus": "Circuit Design with Proteus",
+        "web_servisleri": "Introduction to Web Services",
+        "git_&_github": "Version Control: Git and GitHub",
+        "java_advanced": "Advanced Java"
+      }
+    }
   }
 } 

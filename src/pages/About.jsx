@@ -52,9 +52,11 @@ const About = () => {
             {/* Deneyim */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.experience.title')}</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{t('about.experience.senior.title')}</h3>
+              <div className="space-y-6">
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {t('about.experience.senior.title')}
+                  </h3>
                   <p className="text-gray-600">{t('about.experience.senior.company')}</p>
                   <ul className="list-disc list-inside text-gray-600 mt-2">
                     <li>{t('about.experience.senior.duties.1')}</li>
@@ -62,8 +64,10 @@ const About = () => {
                     <li>{t('about.experience.senior.duties.3')}</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{t('about.experience.junior.title')}</h3>
+                <div className="border-l-4 border-blue-500 pl-4">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {t('about.experience.junior.title')}
+                  </h3>
                   <p className="text-gray-600">{t('about.experience.junior.company')}</p>
                   <ul className="list-disc list-inside text-gray-600 mt-2">
                     <li>{t('about.experience.junior.duties.1')}</li>
@@ -76,7 +80,7 @@ const About = () => {
             {/* Eğitim */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.education.title')}</h2>
-              <div>
+              <div className="border-l-4 border-purple-500 pl-4">
                 <h3 className="text-xl font-semibold text-gray-800">{t('about.education.degree')}</h3>
                 <p className="text-gray-600">{t('about.education.school')}</p>
               </div>

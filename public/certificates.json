@@ -1,19 +1,75 @@
 [
   {
-    "id": "nKqhoONvK0",
-    "name": "React & Redux",
-    "certificate": "BTK Akademi React ve Redux Eğitimi",
+    "id": "jK1hKxwvwp",
+    "name": "Bilgi Teknolojileri",
+    "certificate": "Bilgi Teknolojilerine Giriş",
     "provider": "BTK Akademi",
-    "date": "2024",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=nKqhoONvK0"
+    "date": "17.06.2022",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=jK1hKxwvwp"
   },
   {
-    "id": "örnek-id-2",
-    "name": "JavaScript",
-    "certificate": "BTK Akademi Modern JavaScript Eğitimi",
+    "id": "OKMhqKPj9d",
+    "name": "Java",
+    "certificate": "JAVA ile Programlamaya Giriş",
     "provider": "BTK Akademi",
-    "date": "2024",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=örnek-id-2"
+    "date": "29.06.2022",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=OKMhqKPj9d"
+  },
+  {
+    "id": "qKrhmgdK17",
+    "name": "HTML5",
+    "certificate": "HTML5 ile Web Geliştirme",
+    "provider": "BTK Akademi",
+    "date": "10.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdK17"
+  },
+  {
+    "id": "Ko9fLO8LEb",
+    "name": "IoT",
+    "certificate": "Nesnelerin İnterneti (IoT) ve Güvenliği",
+    "provider": "BTK Akademi",
+    "date": "10.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=Ko9fLO8LEb"
+  },
+  {
+    "id": "qKrhmgdKx4",
+    "name": "CSS",
+    "certificate": "CSS Temelleri",
+    "provider": "BTK Akademi",
+    "date": "22.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdKx4"
+  },
+  {
+    "id": "6mqFNjlVBM",
+    "name": "Proteus",
+    "certificate": "Proteus ile Devre Tasarımı",
+    "provider": "BTK Akademi",
+    "date": "30.09.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=6mqFNjlVBM"
+  },
+  {
+    "id": "ax1hD2zBqg",
+    "name": "Web Servisleri",
+    "certificate": "Web Servislerine Giriş",
+    "provider": "BTK Akademi",
+    "date": "27.01.2025",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=ax1hD2zBqg"
+  },
+  {
+    "id": "bx1hG4VXA7",
+    "name": "Git & GitHub",
+    "certificate": "Versiyon Kontrolleri: Git ve GitHub",
+    "provider": "BTK Akademi",
+    "date": "28.01.2025",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=bx1hG4VXA7"
+  },
+  {
+    "id": "nKqhoONvK0",
+    "name": "Java Advanced",
+    "certificate": "İleri Seviye Java",
+    "provider": "BTK Akademi",
+    "date": "30.01.2025",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=nKqhoONvK0"
   }
 ]
   

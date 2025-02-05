@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { useTranslation } from 'react-i18next';
 
 const Certificates = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [certificates, setCertificates] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,6 +23,27 @@ const Certificates = () => {
         setLoading(false);
       });
   }, [t]);
+
+  const getLocalizedCertificateName = (cert) => {
+    // Sertifika isimlerinin çevirisi için özel eşleştirme
+    const sertifikaEslesme = {
+      "Bilgi Teknolojileri": "bilgi_teknolojileri", 
+      "Java": "java",
+      "Java Advanced": "java_advanced",
+      "Web Servisleri": "web_servisleri",
+      "Git & GitHub": "git_&_github",
+      "HTML5": "html5",
+      "IoT": "iot",
+      "CSS": "css",
+      "Proteus": "proteus"
+    };
+
+    // Eşleştirme varsa onu kullan, yoksa varsayılan dönüşümü uygula
+    const certKey = sertifikaEslesme[cert.name] ||
+      cert.name.toLowerCase().replace(/ & /g, '_&_').replace(/ /g, '_');
+    
+    return t(`certificates.certificates.btk.${certKey}`, cert.certificate);
+  };
 
   if (loading) return (
     <div className="min-h-screen bg-gray-50">
@@ -59,10 +80,11 @@ const Certificates = () => {
                 key={cert.id} 
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <h2 className="text-xl font-bold text-gray-800 mb-2">{cert.name}</h2>
-                <p className="text-gray-600 mb-2">{cert.certificate}</p>
+                <h2 className="text-xl font-bold text-gray-800 mb-2">
+                  {getLocalizedCertificateName(cert)}
+                </h2>
                 <p className="text-sm text-gray-500 mb-4">
-                  {cert.provider} - {cert.date}
+                  {t('certificates.certificates.btk.provider')} - {cert.date}
                 </p>
                 <a 
                   href={cert.validateUrl}
