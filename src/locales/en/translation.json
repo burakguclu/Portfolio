@@ -147,7 +147,114 @@
     "viewProject": "View Project",
     "loading": "Loading...",
     "error": "Error",
-    "loadError": "Failed to load GitHub projects"
+    "loadError": "Failed to load GitHub projects",
+    "noLanguage": "No Language",
+    "repos": {
+      "portfolio": {
+        "name": "Portfolio",
+        "description": "My personal portfolio website"
+      },
+      "portfolio_v2": {
+        "name": "Portfolio V2",
+        "description": "New version of my personal portfolio website"
+      },
+      "portfolio_v3": {
+        "name": "Portfolio V3",
+        "description": "Modern portfolio site developed with React and Tailwind CSS"
+      },
+      "embedded_systems": {
+        "name": "Embedded Systems",
+        "description": "Collection of embedded systems and IoT projects"
+      },
+      "smart_home": {
+        "name": "Smart Home System",
+        "description": "Arduino and Raspberry Pi based smart home automation"
+      },
+      "weather_station": {
+        "name": "Weather Station",
+        "description": "ESP32 based IoT weather station"
+      },
+      "library_management": {
+        "name": "Library Management System",
+        "description": "Library management application developed with Java Spring Boot"
+      },
+      "student_tracking": {
+        "name": "Student Tracking System",
+        "description": "Student tracking application developed with React and Node.js"
+      },
+      "data_structures": {
+        "name": "Data Structures",
+        "description": "Studies on data structures and algorithms"
+      },
+      "algorithms": {
+        "name": "Algorithms",
+        "description": "Various algorithm problems and solutions"
+      },
+      "web_scraper": {
+        "name": "Web Scraper",
+        "description": "Web scraping tools developed with Python"
+      },
+      "image_processing": {
+        "name": "Image Processing",
+        "description": "Image processing projects with OpenCV and Python"
+      },
+      "machine_learning": {
+        "name": "Machine Learning",
+        "description": "Machine learning and data analysis projects"
+      },
+      "deep_learning": {
+        "name": "Deep Learning",
+        "description": "Deep learning applications with TensorFlow and PyTorch"
+      },
+      "react_components": {
+        "name": "React Components",
+        "description": "Collection of reusable React components"
+      },
+      "python_utils": {
+        "name": "Python Utils",
+        "description": "Various Python utility tools and scripts"
+      },
+      "java_design_patterns": {
+        "name": "Java Design Patterns",
+        "description": "Design pattern examples with Java"
+      },
+      "burakguclu.github.io": {
+        "name": "Personal Website",
+        "description": "My personal website hosted on GitHub Pages"
+      },
+      "ted_ce_graduation_project": {
+        "name": "TED Graduation Project",
+        "description": "TED University Computer Engineering graduation project"
+      },
+      "python_data_analysis": {
+        "name": "Python Data Analysis",
+        "description": "Data analysis and visualization studies with Python"
+      },
+      "react_portfolio": {
+        "name": "React Portfolio",
+        "description": "Modern portfolio site developed with React and Tailwind CSS"
+      },
+      "arduino_projects": {
+        "name": "Arduino Projects",
+        "description": "Various IoT projects developed with Arduino"
+      },
+      "esp32_weather_station": {
+        "name": "ESP32 Weather Station",
+        "description": "ESP32 based wireless weather station project"
+      },
+      "soap_protocol": {
+        "name": "SOAP Protocol Applications",
+        "description": "Examples of SOAP web services and protocol implementations"
+      },
+      "data_communication": {
+        "name": "Data Communication",
+        "description": "Studies on data communication and network protocols"
+      },
+      "computer_networks": {
+        "name": "Computer Networks",
+        "description": "Applications on computer networks and protocols"
+      }
+    }
   },
   "certificates": {
     "title": "My Certificates",

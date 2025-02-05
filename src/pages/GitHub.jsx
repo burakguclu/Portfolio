@@ -9,10 +9,10 @@ const ProjectCard = ({ project }) => {
   const getLanguageStyle = (language) => {
     const styles = {
       JavaScript: { 
-        bg: 'bg-[#f7df1e]/10', 
-        text: 'text-[#f7df1e]', 
-        border: 'border-[#f7df1e]/20',
-        hover: 'hover:border-[#f7df1e]/50',
+        bg: 'bg-[#f1e05a]/10', 
+        text: 'text-[#f1e05a]', 
+        border: 'border-[#f1e05a]/20',
+        hover: 'hover:border-[#f1e05a]/50',
         icon: '📦'
       },
       TypeScript: { 
@@ -23,10 +23,10 @@ const ProjectCard = ({ project }) => {
         icon: '🔷'
       },
       Python: { 
-        bg: 'bg-[#3776ab]/10', 
-        text: 'text-[#3776ab]', 
-        border: 'border-[#3776ab]/20',
-        hover: 'hover:border-[#3776ab]/50',
+        bg: 'bg-[#3572A5]/10', 
+        text: 'text-[#3572A5]', 
+        border: 'border-[#3572A5]/20',
+        hover: 'hover:border-[#3572A5]/50',
         icon: '🐍'
       },
       Java: { 
@@ -35,6 +35,20 @@ const ProjectCard = ({ project }) => {
         border: 'border-[#b07219]/20',
         hover: 'hover:border-[#b07219]/50',
         icon: '☕'
+      },
+      HTML: {
+        bg: 'bg-[#e34c26]/10',
+        text: 'text-[#e34c26]',
+        border: 'border-[#e34c26]/20',
+        hover: 'hover:border-[#e34c26]/50',
+        icon: '🌐'
+      },
+      CSS: {
+        bg: 'bg-[#563d7c]/10',
+        text: 'text-[#563d7c]',
+        border: 'border-[#563d7c]/20',
+        hover: 'hover:border-[#563d7c]/50',
+        icon: '🎨'
       },
       default: { 
         bg: 'bg-gray-50', 
@@ -52,44 +66,48 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className={`
-      relative overflow-hidden rounded-xl border-2 ${styles.border} ${styles.hover}
+      group relative overflow-hidden rounded-xl border-2 
+      ${styles.border} ${styles.hover}
       transition-all duration-300 hover:shadow-xl hover:-translate-y-1
       backdrop-blur-sm bg-white/40
     `}>
-      <div className="p-6">
+      <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      <div className="relative p-6">
         {/* Üst Kısım - Başlık ve Dil */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-2xl" role="img" aria-label="language-icon">
+              <span className="text-2xl transform group-hover:scale-110 transition-transform duration-300" role="img" aria-label="language-icon">
                 {styles.icon}
               </span>
               <span className={`
                 text-sm font-medium ${styles.text} px-3 py-1 rounded-full
                 ${styles.bg} border border-current/20
+                transform group-hover:scale-105 transition-transform duration-300
               `}>
                 {project.language || t('github.noLanguage')}
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-800 line-clamp-1 group-hover:text-blue-600">
+            <h3 className="text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
               {project.name}
             </h3>
           </div>
           
-          <div className="flex items-center gap-4 text-gray-400">
-            <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1.5 group-hover:scale-110 transition-transform duration-300">
               <FaStar className="text-amber-400" />
-              <span className="text-sm font-medium">{project.stargazers_count}</span>
+              <span className="text-sm font-medium text-gray-600">{project.stargazers_count}</span>
             </div>
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 group-hover:scale-110 transition-transform duration-300">
               <FaCodeBranch className="text-indigo-400" />
-              <span className="text-sm font-medium">{project.forks_count}</span>
+              <span className="text-sm font-medium text-gray-600">{project.forks_count}</span>
             </div>
           </div>
         </div>
 
         {/* Açıklama */}
-        <p className="text-gray-600 mb-6 line-clamp-2 min-h-[3rem]">
+        <p className="text-gray-600 mb-6 line-clamp-2 min-h-[3rem] group-hover:text-gray-800 transition-colors duration-300">
           {project.description || t('github.noDescription')}
         </p>
 
@@ -100,15 +118,16 @@ const ProjectCard = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
             className={`
-              group inline-flex items-center gap-2 px-4 py-2 rounded-lg
+              group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg
               ${styles.bg} ${styles.text} font-medium
               hover:bg-opacity-100 transition-all duration-300
               border border-current/20 hover:border-current/40
+              transform hover:scale-105
             `}
           >
-            <FaGithub className="text-lg transition-transform group-hover:scale-110" />
+            <FaGithub className="text-lg transition-transform group-hover/btn:rotate-12 duration-300" />
             {t('github.viewProject')}
-            <span className="text-sm transition-transform group-hover:translate-x-0.5">→</span>
+            <span className="text-sm transition-transform group-hover/btn:translate-x-1 duration-300">→</span>
           </a>
         </div>
       </div>
@@ -168,9 +187,6 @@ const GitHub = () => {
           <h1 className="text-4xl font-bold mb-2 text-center gradient-text">
             {t('github.title')}
           </h1>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            {t('github.subtitle')}
-          </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {repos.map((repo) => (
               <ProjectCard key={repo.id} project={repo} />
