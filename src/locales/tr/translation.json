@@ -8,10 +8,14 @@
   },
   "home": {
     "welcome": "Portfolyoma Hoş Geldiniz",
-    "intro": "Merhaba! Ben bir yazılım geliştiricisiyim ve bu portfolyo sitesinde projelerimi ve sertifikalarımı sizlerle paylaşıyorum.",
+    "intro": "Merhaba! Ben bir yazılım geliştiricisiyim ve modern web teknolojileri konusunda tutkulu birisiyim. Bu portfolyo sitesinde projelerimi ve sertifikalarımı sizlerle paylaşıyorum.",
     "buttons": {
       "certificates": "Sertifikalarım",
       "projects": "Projelerim"
+    },
+    "sections": {
+      "certificates": "Eğitim hayatım boyunca aldığım sertifikalar ve başarılarım burada listeleniyor.",
+      "projects": "GitHub üzerinde geliştirdiğim açık kaynak projeler ve katkıda bulunduğum repolar."
     }
   },
   "github": {

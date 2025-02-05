@@ -8,10 +8,14 @@
   },
   "home": {
     "welcome": "Welcome to My Portfolio",
-    "intro": "Hello! I'm a software developer and I'm sharing my projects and certificates with you on this portfolio site.",
+    "intro": "Hello! I'm a software developer passionate about modern web technologies. Here I share my projects and certificates with you.",
     "buttons": {
       "certificates": "My Certificates",
       "projects": "My Projects"
+    },
+    "sections": {
+      "certificates": "Certificates and achievements I've earned throughout my educational journey.",
+      "projects": "Open source projects I've developed and repositories I've contributed to on GitHub."
     }
   },
   "about": {
