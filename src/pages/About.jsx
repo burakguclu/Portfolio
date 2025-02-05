@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   const [showPrintVersion, setShowPrintVersion] = useState(false);
 
   const handlePrint = () => {
@@ -23,12 +25,12 @@ const About = () => {
             {/* Kişisel Bilgiler */}
             <div className="mb-8 flex items-start justify-between">
               <div>
-                <h1 className="text-3xl font-bold text-gray-800">Adınız Soyadınız</h1>
-                <p className="text-xl text-gray-600">Yazılım Geliştirici</p>
+                <h1 className="text-3xl font-bold text-gray-800">{t('about.title')}</h1>
+                <p className="text-xl text-gray-600">{t('about.jobTitle')}</p>
                 <div className="mt-2 text-gray-600">
                   <p>📧 email@example.com</p>
                   <p>📱 +90 555 555 5555</p>
-                  <p>📍 İstanbul, Türkiye</p>
+                  <p>📍 {t('about.contact.location')}</p>
                 </div>
               </div>
               <div className="screen-only">
@@ -36,40 +38,36 @@ const About = () => {
                   onClick={handlePrint}
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  CV'yi Yazdır
+                  {t('about.printCV')}
                 </button>
               </div>
             </div>
 
             {/* Özet */}
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Profesyonel Özet</h2>
-              <p className="text-gray-600">
-                5 yıllık yazılım geliştirme deneyimine sahip, modern web teknolojilerinde uzmanlaşmış
-                bir yazılım geliştiriciyim. React, Node.js ve cloud teknolojileri konusunda güçlü
-                bir altyapıya sahibim.
-              </p>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.summary.title')}</h2>
+              <p className="text-gray-600">{t('about.summary.content')}</p>
             </section>
 
             {/* Deneyim */}
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">İş Deneyimi</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.experience.title')}</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Kıdemli Frontend Geliştirici</h3>
-                  <p className="text-gray-600">Örnek Şirket A.Ş. | 2020 - Günümüz</p>
+                  <h3 className="text-xl font-semibold text-gray-800">{t('about.experience.senior.title')}</h3>
+                  <p className="text-gray-600">{t('about.experience.senior.company')}</p>
                   <ul className="list-disc list-inside text-gray-600 mt-2">
-                    <li>Modern React uygulamaları geliştirme</li>
-                    <li>Performans optimizasyonu</li>
-                    <li>Takım liderliği</li>
+                    <li>{t('about.experience.senior.duties.1')}</li>
+                    <li>{t('about.experience.senior.duties.2')}</li>
+                    <li>{t('about.experience.senior.duties.3')}</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Frontend Geliştirici</h3>
-                  <p className="text-gray-600">Örnek Teknoloji Ltd. | 2018 - 2020</p>
+                  <h3 className="text-xl font-semibold text-gray-800">{t('about.experience.junior.title')}</h3>
+                  <p className="text-gray-600">{t('about.experience.junior.company')}</p>
                   <ul className="list-disc list-inside text-gray-600 mt-2">
-                    <li>Responsive web uygulamaları geliştirme</li>
-                    <li>UI/UX geliştirmeleri</li>
+                    <li>{t('about.experience.junior.duties.1')}</li>
+                    <li>{t('about.experience.junior.duties.2')}</li>
                   </ul>
                 </div>
               </div>
@@ -77,19 +75,19 @@ const About = () => {
 
             {/* Eğitim */}
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Eğitim</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.education.title')}</h2>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800">Bilgisayar Mühendisliği</h3>
-                <p className="text-gray-600">Örnek Üniversitesi | 2014 - 2018</p>
+                <h3 className="text-xl font-semibold text-gray-800">{t('about.education.degree')}</h3>
+                <p className="text-gray-600">{t('about.education.school')}</p>
               </div>
             </section>
 
             {/* Yetenekler */}
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Teknik Yetenekler</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.skills.title')}</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Frontend</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{t('about.skills.frontend')}</h3>
                   <ul className="list-disc list-inside text-gray-600">
                     <li>React.js</li>
                     <li>TypeScript</li>
@@ -98,7 +96,7 @@ const About = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Backend</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{t('about.skills.backend')}</h3>
                   <ul className="list-disc list-inside text-gray-600">
                     <li>Node.js</li>
                     <li>Express.js</li>
@@ -111,10 +109,10 @@ const About = () => {
 
             {/* Diller */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Yabancı Diller</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('about.languages.title')}</h2>
               <ul className="list-disc list-inside text-gray-600">
-                <li>İngilizce - İleri Seviye</li>
-                <li>Almanca - Orta Seviye</li>
+                <li>{t('about.languages.english')}</li>
+                <li>{t('about.languages.german')}</li>
               </ul>
             </section>
           </div>

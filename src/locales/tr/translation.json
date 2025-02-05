@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "certificates": "Sertifikalar",
+    "github": "GitHub Projeler"
+  },
+  "home": {
+    "welcome": "Portfolyoma Hoş Geldiniz",
+    "intro": "Merhaba! Ben bir yazılım geliştiricisiyim ve bu portfolyo sitesinde projelerimi ve sertifikalarımı sizlerle paylaşıyorum.",
+    "buttons": {
+      "certificates": "Sertifikalarım",
+      "projects": "Projelerim"
+    }
+  },
+  "github": {
+    "title": "GitHub Projelerim",
+    "noDescription": "Açıklama bulunmuyor",
+    "viewProject": "Projeyi Görüntüle",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "loadError": "GitHub projeleri yüklenemedi"
+  },
+  "certificates": {
+    "title": "Sertifikalarım",
+    "viewPdf": "PDF Görüntüle",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "loadError": "Sertifikalar yüklenemedi"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "jobTitle": "Yazılım Geliştirici",
+    "printCV": "CV'yi Yazdır",
+    "contact": {
+      "location": "İstanbul, Türkiye"
+    },
+    "summary": {
+      "title": "Profesyonel Özet",
+      "content": "5 yıllık yazılım geliştirme deneyimine sahip, modern web teknolojilerinde uzmanlaşmış bir yazılım geliştiriciyim. React, Node.js ve cloud teknolojileri konusunda güçlü bir altyapıya sahibim."
+    },
+    "experience": {
+      "title": "İş Deneyimi",
+      "senior": {
+        "title": "Kıdemli Frontend Geliştirici",
+        "company": "Örnek Şirket A.Ş. | 2020 - Günümüz",
+        "duties": {
+          "1": "Modern React uygulamaları geliştirme",
+          "2": "Performans optimizasyonu",
+          "3": "Takım liderliği"
+        }
+      },
+      "junior": {
+        "title": "Frontend Geliştirici",
+        "company": "Örnek Teknoloji Ltd. | 2018 - 2020",
+        "duties": {
+          "1": "Responsive web uygulamaları geliştirme",
+          "2": "UI/UX geliştirmeleri"
+        }
+      }
+    },
+    "education": {
+      "title": "Eğitim",
+      "degree": "Bilgisayar Mühendisliği",
+      "school": "Örnek Üniversitesi | 2014 - 2018"
+    },
+    "skills": {
+      "title": "Teknik Yetenekler",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "languages": {
+      "title": "Yabancı Diller",
+      "english": "İngilizce - İleri Seviye",
+      "german": "Almanca - Orta Seviye"
+    }
+  }
+} 

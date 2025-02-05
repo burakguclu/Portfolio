@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Certificates from "./pages/Certificates";
 import GitHubRepos from "./pages/GitHubRepos";
 import "./style.css";
+import "./i18n";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

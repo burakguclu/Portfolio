@@ -1,13 +1,19 @@
 [
-    {
-      "name": "John Doe",
-      "certificate": "React Developer",
-      "pdf": "/certificates/react-developer.pdf"
-    },
-    {
-      "name": "Jane Smith",
-      "certificate": "Node.js Mastery",
-      "pdf": "/certificates/nodejs-mastery.pdf"
-    }
-  ]
+  {
+    "id": "nKqhoONvK0",
+    "name": "React & Redux",
+    "certificate": "BTK Akademi React ve Redux Eğitimi",
+    "provider": "BTK Akademi",
+    "date": "2024",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=nKqhoONvK0"
+  },
+  {
+    "id": "örnek-id-2",
+    "name": "JavaScript",
+    "certificate": "BTK Akademi Modern JavaScript Eğitimi",
+    "provider": "BTK Akademi",
+    "date": "2024",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=örnek-id-2"
+  }
+]
   

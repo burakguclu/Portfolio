@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "github": "GitHub Projects"
+  },
+  "home": {
+    "welcome": "Welcome to My Portfolio",
+    "intro": "Hello! I'm a software developer and I'm sharing my projects and certificates with you on this portfolio site.",
+    "buttons": {
+      "certificates": "My Certificates",
+      "projects": "My Projects"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "jobTitle": "Software Developer",
+    "printCV": "Print CV",
+    "contact": {
+      "location": "Istanbul, Turkey"
+    },
+    "summary": {
+      "title": "Professional Summary",
+      "content": "A software developer with 5 years of experience, specialized in modern web technologies. I have a strong background in React, Node.js, and cloud technologies."
+    },
+    "experience": {
+      "title": "Work Experience",
+      "senior": {
+        "title": "Senior Frontend Developer",
+        "company": "Example Company Inc. | 2020 - Present",
+        "duties": {
+          "1": "Developing modern React applications",
+          "2": "Performance optimization",
+          "3": "Team leadership"
+        }
+      },
+      "junior": {
+        "title": "Frontend Developer",
+        "company": "Example Technology Ltd. | 2018 - 2020",
+        "duties": {
+          "1": "Developing responsive web applications",
+          "2": "UI/UX improvements"
+        }
+      }
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Computer Engineering",
+      "school": "Example University | 2014 - 2018"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "languages": {
+      "title": "Languages",
+      "english": "English - Advanced",
+      "german": "German - Intermediate"
+    }
+  },
+  "github": {
+    "title": "My GitHub Projects",
+    "noDescription": "No description available",
+    "viewProject": "View Project",
+    "loading": "Loading...",
+    "error": "Error",
+    "loadError": "Failed to load GitHub projects"
+  },
+  "certificates": {
+    "title": "My Certificates",
+    "viewPdf": "View PDF",
+    "loading": "Loading...",
+    "error": "Error",
+    "loadError": "Failed to load certificates"
+  }
+} 

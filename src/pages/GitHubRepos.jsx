@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
+import { useTranslation } from 'react-i18next';
 
 const GitHubRepos = () => {
+  const { t } = useTranslation();
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -10,7 +12,7 @@ const GitHubRepos = () => {
   useEffect(() => {
     fetch(`https://api.github.com/users/${githubUsername}/repos`)
       .then((response) => {
-        if (!response.ok) throw new Error("GitHub projeleri yüklenemedi");
+        if (!response.ok) throw new Error(t('github.loadError'));
         return response.json();
       })
       .then((data) => {
@@ -21,7 +23,7 @@ const GitHubRepos = () => {
         setError(error.message);
         setLoading(false);
       });
-  }, []);
+  }, [t]);
 
   if (loading) return (
     <div className="min-h-screen bg-gray-50">
@@ -37,7 +39,7 @@ const GitHubRepos = () => {
       <Navbar />
       <div className="container mx-auto px-4 py-8">
         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded">
-          <p className="font-bold">Hata</p>
+          <p className="font-bold">{t('github.error')}</p>
           <p>{error}</p>
         </div>
       </div>
@@ -50,7 +52,7 @@ const GitHubRepos = () => {
       <main className="flex-grow w-full">
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold mb-8 text-center gradient-text">
-            GitHub Projelerim
+            {t('github.title')}
           </h1>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {repos.map((repo) => (
@@ -60,7 +62,7 @@ const GitHubRepos = () => {
               >
                 <h2 className="text-xl font-bold text-gray-800 mb-2">{repo.name}</h2>
                 <p className="text-gray-600 text-sm mb-4 h-20 overflow-auto">
-                  {repo.description || "Açıklama bulunmuyor"}
+                  {repo.description || t('github.noDescription')}
                 </p>
                 <div className="flex justify-between items-center">
                   <a
@@ -69,7 +71,7 @@ const GitHubRepos = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
                   >
-                    Projeyi Görüntüle
+                    {t('github.viewProject')}
                   </a>
                   <div className="flex items-center space-x-4">
                     <span className="text-sm text-gray-500">

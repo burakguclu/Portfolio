@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
+import { useTranslation } from 'react-i18next';
 
 const Certificates = () => {
+  const { t } = useTranslation();
   const [certificates, setCertificates] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -9,7 +11,7 @@ const Certificates = () => {
   useEffect(() => {
     fetch("/certificates.json")
       .then((response) => {
-        if (!response.ok) throw new Error("Sertifikalar yüklenemedi");
+        if (!response.ok) throw new Error(t('certificates.loadError'));
         return response.json();
       })
       .then((data) => {
@@ -20,7 +22,7 @@ const Certificates = () => {
         setError(error.message);
         setLoading(false);
       });
-  }, []);
+  }, [t]);
 
   if (loading) return (
     <div className="min-h-screen bg-gray-50">
@@ -36,7 +38,7 @@ const Certificates = () => {
       <Navbar />
       <div className="container mx-auto px-4 py-8">
         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded">
-          <p className="font-bold">Hata</p>
+          <p className="font-bold">{t('certificates.error')}</p>
           <p>{error}</p>
         </div>
       </div>
@@ -49,23 +51,26 @@ const Certificates = () => {
       <main className="flex-grow w-full">
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold mb-8 text-center gradient-text">
-            Sertifikalarım
+            {t('certificates.title')}
           </h1>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {certificates.map((cert, index) => (
+            {certificates.map((cert) => (
               <div 
-                key={index} 
+                key={cert.id} 
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <h2 className="text-xl font-bold text-gray-800 mb-2">{cert.name}</h2>
-                <p className="text-gray-600 mb-4">{cert.certificate}</p>
+                <p className="text-gray-600 mb-2">{cert.certificate}</p>
+                <p className="text-sm text-gray-500 mb-4">
+                  {cert.provider} - {cert.date}
+                </p>
                 <a 
-                  href={cert.pdf} 
+                  href={cert.validateUrl}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  PDF Görüntüle
+                  {t('certificates.viewPdf')}
                 </a>
               </div>
             ))}
