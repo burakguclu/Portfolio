@@ -20,14 +20,24 @@
   },
   "about": {
     "title": "About Me",
-    "jobTitle": "Software Developer",
+    "sections": {
+      "personal": "PERSONAL DETAILS",
+      "interests": "INTERESTS",
+      "languages": "LANGUAGES",
+      "experience": "WORK EXPERIENCE",
+      "education": "EDUCATION",
+      "skills": "SKILLS",
+      "projects": "PROJECTS",
+      "certificates": "CERTIFICATES AND ACHIEVEMENTS"
+    },
+    "jobTitle": "Computer Engineering and Electrical-Electronics Engineering Student",
     "printCV": "Print CV",
     "contact": {
       "location": "Istanbul, Turkey"
     },
     "summary": {
       "title": "Professional Summary",
-      "content": "A software developer with 5 years of experience, specialized in modern web technologies. I have a strong background in React, Node.js, and cloud technologies."
+      "content": "I am a 4th year Computer Engineering student at TED University and pursuing a double major in Electrical-Electronics Engineering. I have experience in defense industry, embedded systems and web technologies."
     },
     "experience": {
       "title": "Work Experience",
@@ -47,12 +57,26 @@
           "1": "Developing responsive web applications",
           "2": "UI/UX improvements"
         }
+      },
+      "intern": {
+        "tusas": "Electrical Electronics Engineering Intern",
+        "aselsan": "Computer Engineering Intern",
+        "bites": "Computer Engineering Intern",
+        "tcdd": "Electrical Electronics Engineering Intern",
+        "assistant": "Student Assistant"
       }
     },
     "education": {
       "title": "Education",
       "degree": "Computer Engineering",
-      "school": "Example University | 2014 - 2018"
+      "school": "Example University | 2014 - 2018",
+      "university": "TED University",
+      "department": {
+        "ce": "Computer Engineering",
+        "ee": "Electrical-Electronics Engineering",
+        "erasmus": "Computer Engineering (Erasmus+)"
+      },
+      "highschool": "High School Education"
     },
     "skills": {
       "title": "Technical Skills",
@@ -70,6 +94,31 @@
       "error": "Error loading LinkedIn data",
       "current": "Present",
       "ongoing": "Ongoing"
+    },
+    "interests": {
+      "sports": "Sports",
+      "cooking": "Cooking",
+      "reading": "Reading"
+    },
+    "languages": {
+      "english": "English",
+      "german": "German",
+      "turkish": "Turkish",
+      "levels": {
+        "native": "Native",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate",
+        "beginner": "Beginner"
+      }
+    },
+    "certificates": {
+      "coursera": {
+        "statistics": {
+          "title": "Statistics with Python",
+          "provider": "Coursera",
+          "description": "Data analysis, statistical modeling and Python programming"
+        }
+      }
     }
   },
   "github": {
@@ -98,6 +147,12 @@
         "web_servisleri": "Introduction to Web Services",
         "git_&_github": "Version Control: Git and GitHub",
         "java_advanced": "Advanced Java"
+      },
+      "coursera": {
+        "python": {
+          "title": "Statistics with Python",
+          "description": "Data analysis, statistical modeling and Python programming"
+        }
       }
     }
   }

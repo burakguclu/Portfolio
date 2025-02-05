@@ -44,19 +44,25 @@
         "web_servisleri": "Web Servislerine Giriş",
         "git_&_github": "Versiyon Kontrolleri: Git ve GitHub",
         "java_advanced": "İleri Seviye Java"
+      },
+      "coursera": {
+        "python": {
+          "title": "Python ile İstatistik",
+          "description": "Veri analizi, istatistiksel modelleme ve Python programlama"
+        }
       }
     }
   },
   "about": {
     "title": "Hakkımda",
-    "jobTitle": "Yazılım Geliştirici",
+    "jobTitle": "Bilgisayar ve Elektrik-Elektronik Mühendisliği Öğrencisi",
     "printCV": "CV'yi Yazdır",
     "contact": {
       "location": "İstanbul, Türkiye"
     },
     "summary": {
       "title": "Profesyonel Özet",
-      "content": "5 yıllık yazılım geliştirme deneyimine sahip, modern web teknolojilerinde uzmanlaşmış bir yazılım geliştiriciyim. React, Node.js ve cloud teknolojileri konusunda güçlü bir altyapıya sahibim."
+      "content": "TED Üniversitesi'nde Bilgisayar Mühendisliği 4. sınıf öğrencisiyim ve aynı zamanda Elektrik-Elektronik Mühendisliği bölümünde çift anadal yapıyorum. Savunma sanayii, gömülü sistemler ve web teknolojileri alanlarında deneyim sahibiyim."
     },
     "experience": {
       "title": "İş Deneyimi",
@@ -76,22 +82,58 @@
           "1": "Responsive web uygulamaları geliştirme",
           "2": "UI/UX geliştirmeleri"
         }
+      },
+      "intern": {
+        "tusas": "Elektrik Elektronik Mühendisliği Stajyeri",
+        "aselsan": "Bilgisayar Mühendisliği Stajyeri",
+        "bites": "Bilgisayar Mühendisliği Stajyeri",
+        "tcdd": "Elektrik Elektronik Mühendisliği Stajyeri",
+        "assistant": "Öğrenci Asistanı"
       }
     },
     "education": {
       "title": "Eğitim",
       "degree": "Bilgisayar Mühendisliği",
-      "school": "Örnek Üniversitesi | 2014 - 2018"
+      "school": "Örnek Üniversitesi | 2014 - 2018",
+      "university": "TED Üniversitesi",
+      "department": {
+        "ce": "Bilgisayar Mühendisliği",
+        "ee": "Elektrik-Elektronik Mühendisliği",
+        "erasmus": "Bilgisayar Mühendisliği (Erasmus+)"
+      },
+      "highschool": "Lise Eğitimi"
     },
     "skills": {
       "title": "Teknik Yetenekler",
       "frontend": "Frontend",
       "backend": "Backend"
     },
+    "sections": {
+      "personal": "KİŞİSEL BİLGİLER",
+      "interests": "İLGİ ALANLARI",
+      "languages": "YABANCI DİLLER",
+      "experience": "İŞ DENEYİMİ",
+      "education": "EĞİTİM",
+      "skills": "YETENEKLER",
+      "projects": "PROJELER",
+      "certificates": "SERTİFİKALAR VE BAŞARILAR"
+    },
+    "interests": {
+      "sports": "Spor",
+      "cooking": "Yemek Yapma",
+      "reading": "Kitap Okuma"
+    },
     "languages": {
       "title": "Yabancı Diller",
-      "english": "İngilizce - İleri Seviye",
-      "german": "Almanca - Orta Seviye"
+      "english": "İngilizce",
+      "german": "Almanca",
+      "turkish": "Türkçe",
+      "levels": {
+        "native": "Anadil",
+        "advanced": "İleri Seviye",
+        "intermediate": "Orta Seviye",
+        "beginner": "Başlangıç"
+      }
     },
     "linkedin": {
       "connect": "LinkedIn ile Bağlan",
@@ -99,6 +141,14 @@
       "error": "LinkedIn verilerini çekerken bir hata oluştu",
       "current": "Günümüz",
       "ongoing": "Devam Ediyor"
+    },
+    "certificates": {
+      "coursera": {
+        "python": {
+          "title": "Python ile İstatistik",
+          "description": "Veri analizi, istatistiksel modelleme ve Python programlama"
+        }
+      }
     }
   }
 } 

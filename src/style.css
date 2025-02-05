@@ -136,3 +136,357 @@ button:focus-visible {
   animation: fadeIn 0.6s ease-out forwards;
   animation-delay: 0.4s;
 }
+
+/* Yazdırma Stilleri */
+@media print {
+  /* Yazdırma sırasında gizlenecek elementler */
+  .no-print, nav, .navbar {
+    display: none !important;
+  }
+  
+  /* Genel yazdırma ayarları */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* CV container yazdırma ayarları */
+  .cv-container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    box-shadow: none;
+    grid-template-columns: 70mm 1fr;
+  }
+
+  /* Font boyutları */
+  .cv-name {
+    font-size: 24px !important;
+  }
+
+  .cv-title {
+    font-size: 16px !important;
+  }
+
+  .section-title {
+    font-size: 14px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px !important;
+  }
+
+  .timeline-location,
+  .timeline-date,
+  .timeline-description {
+    font-size: 12px !important;
+  }
+
+  /* Boşluklar */
+  .cv-left-column {
+    padding: 15mm 10mm;
+  }
+
+  .cv-right-column {
+    padding: 15mm 12mm;
+  }
+
+  .timeline-item {
+    margin-bottom: 15px;
+  }
+
+  /* İkonlar ve noktalar */
+  .contact-icon {
+    width: 14px;
+  }
+
+  .level-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .timeline-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Renkler yazdırmada görünsün */
+  .cv-left-column {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: #364150 !important;
+    color: white !important;
+  }
+
+  .level-dot.filled {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: #4a90e2 !important;
+  }
+
+  /* Kesme kontrolü */
+  .timeline-item,
+  .skill-item,
+  .language-item {
+    page-break-inside: avoid;
+  }
+
+  /* Profil resmi */
+  .profile-image-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cv-container {
+    min-height: 891mm; /* 3 A4 sayfası */
+  }
+
+  .page-break {
+    break-before: page;
+  }
+}
+
+/* Mobil görünüm için responsive tasarım */
+@media screen and (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cv-left-column,
+  .cv-right-column {
+    padding: 20px;
+  }
+}
+
+/* CV container'ı için normal ekran görünümü */
+.cv-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-left-column {
+  background: #364150;
+  color: white;
+  padding: 40px 20px;
+}
+
+.cv-right-column {
+  padding: 40px 30px;
+}
+
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4a90e2;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  width: 20px;
+  color: #4a90e2;
+}
+
+.cv-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cv-title {
+  font-size: 20px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4a90e2;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-location {
+  color: #4a90e2;
+  margin-bottom: 5px;
+}
+
+.timeline-date {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-level {
+  display: flex;
+  gap: 5px;
+}
+
+.level-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e0e0e0;
+}
+
+.level-dot.filled {
+  background: #4a90e2;
+}
+
+/* Yazdırma stilleri güncellendi */
+@media print {
+  .cv-container {
+    box-shadow: none;
+  }
+  
+  /* Diğer yazdırma stilleri aynı kalacak */
+}
+
+/* Yazdırma butonu için stil */
+.print-button {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.print-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobil görünüm için buton pozisyonu */
+@media screen and (max-width: 768px) {
+  .print-button {
+    right: 20px;
+  }
+}
+
+/* Skill kategorileri için stil */
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+/* Proje teknolojileri için etiketler */
+.project-tech {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* İkinci sayfa için stil */
+@media print {
+  .cv-container {
+    min-height: 594mm; /* İki A4 sayfası yüksekliği */
+  }
+
+  .projects-section {
+    break-before: page; /* Yeni sayfada başla */
+  }
+}
+
+/* Sertifika doğrulama linkleri için stil */
+.timeline-content a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+@media print {
+  .timeline-content a {
+    display: none;
+  }
+}

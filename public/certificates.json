@@ -48,6 +48,14 @@
     "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=6mqFNjlVBM"
   },
   {
+    "id": "FGLQ9QZSWKNC",
+    "name": "Python",
+    "certificate": "Python ile İstatistik",
+    "provider": "Coursera",
+    "date": "26.12.2023",
+    "validateUrl": "https://www.coursera.org/account/accomplishments/specialization/FGLQ9QZSWKNC"
+  },
+  {
     "id": "ax1hD2zBqg",
     "name": "Web Servisleri",
     "certificate": "Web Servislerine Giriş",
