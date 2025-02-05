@@ -1,0 +1,13 @@
+[
+    {
+      "name": "John Doe",
+      "certificate": "React Developer",
+      "pdf": "/certificates/react-developer.pdf"
+    },
+    {
+      "name": "Jane Smith",
+      "certificate": "Node.js Mastery",
+      "pdf": "/certificates/nodejs-mastery.pdf"
+    }
+  ]
+  
