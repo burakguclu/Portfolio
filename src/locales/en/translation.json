@@ -117,6 +117,26 @@
           "title": "Statistics with Python",
           "provider": "Coursera",
           "description": "Data analysis, statistical modeling and Python programming"
+        },
+        "python_visualization": {
+          "title": "Understanding and Visualizing Data with Python",
+          "provider": "Coursera",
+          "description": "Data types, visualization and statistical summarization"
+        },
+        "python_inferential": {
+          "title": "Inferential Statistical Analysis with Python",
+          "provider": "Coursera",
+          "description": "Confidence intervals and hypothesis testing"
+        },
+        "python_models": {
+          "title": "Fitting Statistical Models to Data with Python",
+          "provider": "Coursera",
+          "description": "Regression analysis and Bayesian statistics"
+        },
+        "python_specialization": {
+          "title": "Statistics with Python Specialization",
+          "provider": "Coursera",
+          "description": "Statistics specialization program with Python by University of Michigan"
         }
       }
     }

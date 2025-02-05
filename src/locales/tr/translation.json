@@ -24,7 +24,9 @@
     "viewProject": "Projeyi Görüntüle",
     "loading": "Yükleniyor...",
     "error": "Hata",
-    "loadError": "GitHub projeleri yüklenemedi"
+    "loadError": "GitHub projeleri yüklenemedi",
+    "subtitle": "GitHub üzerinde geliştirdiğim ve katkıda bulunduğum projeler",
+    "noLanguage": "Dil Belirtilmemiş"
   },
   "certificates": {
     "title": "Sertifikalarım",
@@ -49,6 +51,26 @@
         "python": {
           "title": "Python ile İstatistik",
           "description": "Veri analizi, istatistiksel modelleme ve Python programlama"
+        },
+        "python_visualization": {
+          "title": "Python ile Veri Anlama ve Görselleştirme",
+          "provider": "Coursera",
+          "description": "Veri tipleri, görselleştirme ve istatistiksel özetleme"
+        },
+        "python_inferential": {
+          "title": "Python ile Çıkarımsal İstatistik Analizi",
+          "provider": "Coursera",
+          "description": "Güven aralıkları ve hipotez testleri"
+        },
+        "python_models": {
+          "title": "Python ile İstatistiksel Modelleme",
+          "provider": "Coursera",
+          "description": "Regresyon analizi ve Bayesian istatistik"
+        },
+        "python_specialization": {
+          "title": "Python ile İstatistik Uzmanlığı",
+          "provider": "Coursera",
+          "description": "Michigan Üniversitesi tarafından verilen Python ile veri analizi ve istatistik uzmanlık programı"
         }
       }
     }

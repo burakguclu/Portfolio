@@ -1,67 +1,11 @@
 [
   {
-    "id": "jK1hKxwvwp",
-    "name": "Bilgi Teknolojileri",
-    "certificate": "Bilgi Teknolojilerine Giriş",
+    "id": "nKqhoONvK0",
+    "name": "Java Advanced",
+    "certificate": "İleri Seviye Java",
     "provider": "BTK Akademi",
-    "date": "17.06.2022",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=jK1hKxwvwp"
-  },
-  {
-    "id": "OKMhqKPj9d",
-    "name": "Java",
-    "certificate": "JAVA ile Programlamaya Giriş",
-    "provider": "BTK Akademi",
-    "date": "29.06.2022",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=OKMhqKPj9d"
-  },
-  {
-    "id": "qKrhmgdK17",
-    "name": "HTML5",
-    "certificate": "HTML5 ile Web Geliştirme",
-    "provider": "BTK Akademi",
-    "date": "10.03.2023",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdK17"
-  },
-  {
-    "id": "Ko9fLO8LEb",
-    "name": "IoT",
-    "certificate": "Nesnelerin İnterneti (IoT) ve Güvenliği",
-    "provider": "BTK Akademi",
-    "date": "10.03.2023",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=Ko9fLO8LEb"
-  },
-  {
-    "id": "qKrhmgdKx4",
-    "name": "CSS",
-    "certificate": "CSS Temelleri",
-    "provider": "BTK Akademi",
-    "date": "22.03.2023",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdKx4"
-  },
-  {
-    "id": "6mqFNjlVBM",
-    "name": "Proteus",
-    "certificate": "Proteus ile Devre Tasarımı",
-    "provider": "BTK Akademi",
-    "date": "30.09.2023",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=6mqFNjlVBM"
-  },
-  {
-    "id": "FGLQ9QZSWKNC",
-    "name": "Python",
-    "certificate": "Python ile İstatistik",
-    "provider": "Coursera",
-    "date": "26.12.2023",
-    "validateUrl": "https://www.coursera.org/account/accomplishments/specialization/FGLQ9QZSWKNC"
-  },
-  {
-    "id": "ax1hD2zBqg",
-    "name": "Web Servisleri",
-    "certificate": "Web Servislerine Giriş",
-    "provider": "BTK Akademi",
-    "date": "27.01.2025",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=ax1hD2zBqg"
+    "date": "30.01.2025",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=nKqhoONvK0"
   },
   {
     "id": "bx1hG4VXA7",
@@ -72,12 +16,92 @@
     "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=bx1hG4VXA7"
   },
   {
-    "id": "nKqhoONvK0",
-    "name": "Java Advanced",
-    "certificate": "İleri Seviye Java",
+    "id": "ax1hD2zBqg",
+    "name": "Web Servisleri",
+    "certificate": "Web Servislerine Giriş",
     "provider": "BTK Akademi",
-    "date": "30.01.2025",
-    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=nKqhoONvK0"
+    "date": "27.01.2025",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=ax1hD2zBqg"
+  },
+  {
+    "id": "FGLQ9QZSWKNC",
+    "name": "python_specialization",
+    "certificate": "Statistics with Python Specialization",
+    "provider": "Coursera",
+    "date": "26.12.2023",
+    "validateUrl": "https://www.coursera.org/account/accomplishments/specialization/FGLQ9QZSWKNC"
+  },
+  {
+    "id": "55PBJ5AZ7GHU",
+    "name": "python_models",
+    "certificate": "Fitting Statistical Models to Data with Python",
+    "provider": "Coursera",
+    "date": "26.12.2023",
+    "validateUrl": "https://www.coursera.org/account/accomplishments/verify/55PBJ5AZ7GHU"
+  },
+  {
+    "id": "ZR9PPPSQTET4",
+    "name": "python_inferential",
+    "certificate": "Inferential Statistical Analysis with Python",
+    "provider": "Coursera",
+    "date": "11.12.2023",
+    "validateUrl": "https://www.coursera.org/account/accomplishments/verify/ZR9PPPSQTET4"
+  },
+  {
+    "id": "LJPCQD8C8VJE",
+    "name": "python_visualization",
+    "certificate": "Understanding and Visualizing Data with Python",
+    "provider": "Coursera",
+    "date": "20.11.2023",
+    "validateUrl": "https://www.coursera.org/account/accomplishments/verify/LJPCQD8C8VJE"
+  },
+  {
+    "id": "6mqFNjlVBM",
+    "name": "Proteus",
+    "certificate": "Proteus ile Devre Tasarımı",
+    "provider": "BTK Akademi",
+    "date": "30.09.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=6mqFNjlVBM"
+  },
+  {
+    "id": "qKrhmgdKx4",
+    "name": "CSS",
+    "certificate": "CSS Temelleri",
+    "provider": "BTK Akademi",
+    "date": "22.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdKx4"
+  },
+  {
+    "id": "Ko9fLO8LEb",
+    "name": "IoT",
+    "certificate": "Nesnelerin İnterneti (IoT) ve Güvenliği",
+    "provider": "BTK Akademi",
+    "date": "10.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=Ko9fLO8LEb"
+  },
+  {
+    "id": "qKrhmgdK17",
+    "name": "HTML5",
+    "certificate": "HTML5 ile Web Geliştirme",
+    "provider": "BTK Akademi",
+    "date": "10.03.2023",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=qKrhmgdK17"
+  },
+  {
+    "id": "OKMhqKPj9d",
+    "name": "Java",
+    "certificate": "JAVA ile Programlamaya Giriş",
+    "provider": "BTK Akademi",
+    "date": "29.06.2022",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=OKMhqKPj9d"
+  },
+  {
+    "id": "jK1hKxwvwp",
+    "name": "Bilgi Teknolojileri",
+    "certificate": "Bilgi Teknolojilerine Giriş",
+    "provider": "BTK Akademi",
+    "date": "17.06.2022",
+    "validateUrl": "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=jK1hKxwvwp"
   }
 ]
   
